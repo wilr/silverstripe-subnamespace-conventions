@@ -142,7 +142,11 @@ Any subclasses of `Exception`.
 
 #### Description
 
-Any subclasses of `Extension`.
+Any subclasses of `Extension`. 
+
+#### Issues
+
+Several Core Developers prefer putting `DataExtension` subclasses into `Model` since they potentially alter the `DataModel` but I've found it easier to identify any modified classes if the extensions which modify behaviour are keep seperate.
 
 ---
 
