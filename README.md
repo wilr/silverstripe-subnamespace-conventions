@@ -77,6 +77,7 @@ package
 │	├── [Exceptions/](#d-exceptions)
 │	├── [Extensions/](#d-extensions)
 │	├── [Helpers/](#d-helpers)
+│	├── [Jobs/](#d-jobs)
 │	├── [Model/](#d-model)
 │	├── [Reports/](#d-reports)
 │	├── [Services/](#d-services)
@@ -150,6 +151,14 @@ Any subclasses of `Extension`.
 #### Description
 
 A helper class tends used internally to provide some work that has no business domain meaning. For example, `ArrayHelper` might provide array utilities.
+
+---
+
+### <a name="d-jobs"></a> :white_check_mark: Jobs
+
+#### Description
+
+Any subclasses of `QueuedJob` that run if present.
 
 ---
 
