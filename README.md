@@ -70,7 +70,7 @@ package
 │	├── [Control/](#d-control)
 │	│	└── Middleware/
 │	├── [Forms/](#d-forms)
-│	├── [Exceptions/](#d-extensions)
+│	├── [Exceptions/](#d-exceptions)
 │	├── [Extensions/](#d-extensions)
 │	├── [Helpers/](#d-helpers)
 │	├── [Model/](#d-model)
@@ -85,7 +85,7 @@ package
 
 ## <a name="notes"></a> Notes
 
-### <a name="d-control"></a> Control
+### <a name="d-control"></a> :white_check_mark: Control
 	
 #### Description
 
@@ -104,15 +104,22 @@ use ExampleOrg\ExampleProject\Control\Middleware\TestMiddleware;
 
 ---
 
-### <a name="d-forms"></a> Forms
+### <a name="d-forms"></a> :white_check_mark: Forms
 
 #### Description
 
 SilverStripe Core and modules such as `CMS` use the `Forms` folder consistently.
 
+#### Example
+
+```php
+use ExampleOrg\ExampleProject\Forms\BetterForm;
+use ExampleOrg\ExampleProject\Forms\BetterTextField;
+```
+
 ---
 
-### <a name="d-exceptions"></a> Exceptions
+### <a name="d-exceptions"></a> ::white_check_mark: Exceptions
 
 #### Description
 
@@ -120,7 +127,7 @@ Any subclasses of `Exception`.
 
 ---
 
-### <a name="d-exceptions"></a> Extensions
+### <a name="d-extensions"></a> :white_check_mark: Extensions
 
 #### Description
 
@@ -128,7 +135,7 @@ Any subclasses of `Extension`.
 
 ---
 
-### <a name="d-helpers"></a> Helpers
+### <a name="d-helpers"></a> :white_check_mark: Helpers
 
 #### Description
 
@@ -136,7 +143,7 @@ A helper class tends used internally to provide some work that has no business d
 
 ---
 
-### <a name="d-model"></a> Model
+### <a name="d-model"></a> :white_check_mark: Model
 
 #### Description
 
@@ -144,7 +151,7 @@ Any subclasses of `DataObject`
 
 ---
 
-### <a name="d-reports"></a> Reports
+### <a name="d-reports"></a> :white_check_mark: Reports
 
 #### Description
 
@@ -152,7 +159,7 @@ Any subclasses of `Report`
 
 ---
 
-### <a name="d-services"></a> Services
+### <a name="d-services"></a> :white_check_mark: Services
 
 #### Description
 
@@ -164,7 +171,7 @@ A Service class provides a way of a client to interact with some functionality i
 
 ---
 
-### <a name="d-tasks"></a> Tasks
+### <a name="d-tasks"></a> :white_check_mark: Tasks
 
 #### Description
 
