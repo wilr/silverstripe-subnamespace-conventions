@@ -2,15 +2,15 @@
 
 An opinionated document of guidelines for sub-namspace conventions for SilverStripe projects and modules. 
 
-> This is not intended to capture every possible situation, but provide a guideline for most common situations.
+This is not intended to capture every possible situation, but provide a guideline for most common situations.
 
 ---
 
 ## Table of Contents
 
 1. [Background](#background)
-1. [Conventions Outline](#outline)
-1. [Discussion Notes](#notes)
+1. [Outline](#outline)
+1. [Notes](#notes)
 1. [Contributing](#contributing)
 1. [References](#references)
 
@@ -30,17 +30,20 @@ In the PHP world, namespaces are designed to solve two problems that authors of 
  * Ability to alias (or shorten) Extra_Long_Names designed to alleviate the  first problem, improving readability of source code.
 
 PHP Namespaces provide a way in which to group related classes, interfaces, functions and constants. Here is an example of namespace syntax in PHP:
-
+	
+	```php
 	namespace MyOrg\PackageName; 
 
 ### What are sub-namespaces?
 
 Much like directories and files, PHP namespaces also contain the ability to specify a hierarchy of namespace names. Thus, a namespace name can be defined with sub-levels:
-
+	
+	```php
 	namespace MyOrg\PackageName\Folder\ClassName;
 
 Code can be organised as deep in a hierarchy as needed.
-
+	
+	```php
 	namespace MyOrg\PackageName\Folder\SubFolder\ClassName;
 
 The only requirement for the namespace hierarchy is the subdirectory name MUST match the case of the sub-namespace name.
@@ -50,7 +53,8 @@ The only requirement for the namespace hierarchy is the subdirectory name MUST m
 SilverStripe introduced first-class support for namespaces in the 4.0 release [1]. Extensive work has gone into namespacing the SilverStripe Core Framework and supported modules. Third-party developers have also been encouraged to namespace their plugins for SilverStripe 4.0 support.
 
 Some examples of namespaced classes in SilverStripe 4:
-
+	
+	```php
 	namespace SilverStripe\Core\Config\Config;
 	namespace SilverStripe\Forms\TextField;
 
@@ -58,28 +62,28 @@ At the current moment, there does not exist any conventions for organising sub-n
 
 This document outlines my own reasoning and approach to organising code.
 
-## <a name="outline"></a> Conventional Outline
+## <a name="outline"></a> Outline
 
 <big><pre>
 package
 └── src/
 │	├── [Control/](#d-control)
 │	│	└── Middleware/
-│	├──	[Forms/](#d-forms)
-│	├──	[Exceptions/](#d-extensions)
-│	├──	[Extensions/](#d-extensions)
-│	├──	[Helpers/](#d-helpers)
-│	├──	[Model/](#d-model)
-│	├──	[Reports/](#d-reports)
-│	├──	[Services/](#d-services)
-│	└──	[Tasks/](#d-tasks)
+│	├── [Forms/](#d-forms)
+│	├── [Exceptions/](#d-extensions)
+│	├── [Extensions/](#d-extensions)
+│	├── [Helpers/](#d-helpers)
+│	├── [Model/](#d-model)
+│	├── [Reports/](#d-reports)
+│	├── [Services/](#d-services)
+│	└── [Tasks/](#d-tasks)
 └── tests/
 		..
 </pre></big>
 
 **Not all of the above folders will be required for each module.**
 
-## <a name="notes"></a> Discussion Notes
+## <a name="notes"></a> Notes
 
 ### <a name="d-control"></a> Control
 	
@@ -89,10 +93,10 @@ SilverStripe Core differs, `silverstripe-framework` defines a `Control` folder a
 
 #### Example
 
-	```
-	use ExampleOrg\ExampleProject\Control\TestController;
-	use ExampleOrg\ExampleProject\Control\Middleware\TestMiddleware;
-	```
+```php
+use ExampleOrg\ExampleProject\Control\TestController;
+use ExampleOrg\ExampleProject\Control\Middleware\TestMiddleware;
+```
 
 #### Alternatives
 	
