@@ -105,6 +105,13 @@ use ExampleOrg\ExampleProject\Control\Middleware\TestMiddleware;
 	
 * `Controllers` - Used in core for `silverstripe-cms` however `Control` makes more sense for things related to the HTTP lifecycle
 
+#### Issues
+
+> This layout requires a `PageController` class to live in a namespace different to the `Page` class. SilverStripe currently does not support this and a work around is needed.
+> https://gist.github.com/wilr/5c74e1ba939ef240331052092c2889fa
+
+Several modules solve this by using a `PageTypes` folder.
+
 ---
 
 ### <a name="d-forms"></a> :white_check_mark: Forms
