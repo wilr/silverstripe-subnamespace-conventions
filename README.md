@@ -33,6 +33,7 @@ PHP Namespaces provide a way in which to group related classes, interfaces, func
 	
 ```php
 namespace MyOrg\PackageName; 
+```
 
 ### What are sub-namespaces?
 
@@ -40,11 +41,13 @@ Much like directories and files, PHP namespaces also contain the ability to spec
 	
 ```php
 namespace MyOrg\PackageName\Folder\ClassName;
+```
 
 Code can be organised as deep in a hierarchy as needed.
 	
 ```php
 namespace MyOrg\PackageName\Folder\SubFolder\ClassName;
+```
 
 The only requirement for the namespace hierarchy is the subdirectory name MUST match the case of the sub-namespace name.
 
@@ -57,6 +60,7 @@ Some examples of namespaced classes in SilverStripe 4:
 ```php
 namespace SilverStripe\Core\Config\Config;
 namespace SilverStripe\Forms\TextField;
+```
 
 At the current moment, there does not exist any conventions for organising sub-namespaces. Neither SilverStripe nor PHP-FIG define any standard sub-namespace folders or recommendations. This allows developers to make their own judgement for sub-namespaces. Over time, developers have settled into their own patterns of naming schemes including myself. 
 
