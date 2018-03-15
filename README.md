@@ -31,20 +31,20 @@ In the PHP world, namespaces are designed to solve two problems that authors of 
 
 PHP Namespaces provide a way in which to group related classes, interfaces, functions and constants. Here is an example of namespace syntax in PHP:
 	
-	```php
-	namespace MyOrg\PackageName; 
+```php
+namespace MyOrg\PackageName; 
 
 ### What are sub-namespaces?
 
 Much like directories and files, PHP namespaces also contain the ability to specify a hierarchy of namespace names. Thus, a namespace name can be defined with sub-levels:
 	
-	```php
-	namespace MyOrg\PackageName\Folder\ClassName;
+```php
+namespace MyOrg\PackageName\Folder\ClassName;
 
 Code can be organised as deep in a hierarchy as needed.
 	
-	```php
-	namespace MyOrg\PackageName\Folder\SubFolder\ClassName;
+```php
+namespace MyOrg\PackageName\Folder\SubFolder\ClassName;
 
 The only requirement for the namespace hierarchy is the subdirectory name MUST match the case of the sub-namespace name.
 
@@ -54,9 +54,9 @@ SilverStripe introduced first-class support for namespaces in the 4.0 release [1
 
 Some examples of namespaced classes in SilverStripe 4:
 	
-	```php
-	namespace SilverStripe\Core\Config\Config;
-	namespace SilverStripe\Forms\TextField;
+```php
+namespace SilverStripe\Core\Config\Config;
+namespace SilverStripe\Forms\TextField;
 
 At the current moment, there does not exist any conventions for organising sub-namespaces. Neither SilverStripe nor PHP-FIG define any standard sub-namespace folders or recommendations. This allows developers to make their own judgement for sub-namespaces. Over time, developers have settled into their own patterns of naming schemes including myself. 
 
@@ -78,7 +78,6 @@ package
 │	├── [Services/](#d-services)
 │	└── [Tasks/](#d-tasks)
 └── tests/
-		..
 </pre></big>
 
 **Not all of the above folders will be required for each module.**
