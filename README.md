@@ -40,13 +40,13 @@ namespace MyOrg\PackageName;
 Much like directories and files, PHP namespaces also contain the ability to specify a hierarchy of namespace names. Thus, a namespace name can be defined with sub-levels:
 	
 ```php
-namespace MyOrg\PackageName\Folder\ClassName;
+namespace MyOrg\PackageName\Folder;
 ```
 
 Code can be organised as deep in a hierarchy as needed.
 	
 ```php
-namespace MyOrg\PackageName\Folder\SubFolder\ClassName;
+namespace MyOrg\PackageName\Folder\SubFolder\ChildFolder;
 ```
 
 The only requirement for the namespace hierarchy is the subdirectory name MUST match the case of the sub-namespace name.
