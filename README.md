@@ -1,14 +1,20 @@
 # SilverStripe Sub-namespace Naming Conventions
 
-An opinionated document of guidelines for sub-namspace conventions for SilverStripe projects and modules. This is not intended to capture every possible situation, but provide a guideline for most common situations.
+An opinionated document of guidelines for sub-namspace conventions for SilverStripe projects and modules. 
+
+> This is not intended to capture every possible situation, but provide a guideline for most common situations.
+
+---
 
 ## Table of Contents
 
-	1. [Background](#background)
-	1. [Conventions Outline](#outline)
-	1. [Discussion Notes](#notes)
-	1. [Contributing](#contributing)
-	1. [References](#references)
+1. [Background](#background)
+1. [Conventions Outline](#outline)
+1. [Discussion Notes](#notes)
+1. [Contributing](#contributing)
+1. [References](#references)
+
+---
 
 ## <a name="background"></a> Background
 
@@ -54,20 +60,22 @@ This document outlines my own reasoning and approach to organising code.
 
 ## <a name="outline"></a> Conventional Outline
 
-	/packagename/
-		src/
-			[Control/](#d-control)
-				Middleware/
-			[Forms/](#d-forms)
-			[Exceptions/](#d-extensions)
-			[Extensions/](#d-extensions)
-			[Helpers/](#d-helpers)
-			[Model/](#d-model)
-			[Reports/](#d-reports)
-			[Services/](#d-services)
-			[Tasks/](#d-tasks)
-		tests/
-			..
+<big><pre>
+package
+└── src/
+│	├── [Control/](#d-control)
+│	│	└── Middleware/
+│	├──	[Forms/](#d-forms)
+│	├──	[Exceptions/](#d-extensions)
+│	├──	[Extensions/](#d-extensions)
+│	├──	[Helpers/](#d-helpers)
+│	├──	[Model/](#d-model)
+│	├──	[Reports/](#d-reports)
+│	├──	[Services/](#d-services)
+│	└──	[Tasks/](#d-tasks)
+└── tests/
+		..
+</pre></big>
 
 **Not all of the above folders will be required for each module.**
 
@@ -88,7 +96,9 @@ SilverStripe Core differs, `silverstripe-framework` defines a `Control` folder a
 
 #### Alternatives
 	
-	* `Controllers` - Used in core for `silverstripe-cms` however `Control` makes more sense for things related to the HTTP lifecycle
+* `Controllers` - Used in core for `silverstripe-cms` however `Control` makes more sense for things related to the HTTP lifecycle
+
+---
 
 ### <a name="d-forms"></a> Forms
 
@@ -96,11 +106,15 @@ SilverStripe Core differs, `silverstripe-framework` defines a `Control` folder a
 
 SilverStripe Core and modules such as `CMS` use the `Forms` folder consistently.
 
+---
+
 ### <a name="d-exceptions"></a> Exceptions
 
 #### Description
 
 Any subclasses of `Exception`.
+
+---
 
 ### <a name="d-exceptions"></a> Extensions
 
@@ -108,11 +122,15 @@ Any subclasses of `Exception`.
 
 Any subclasses of `Extension`.
 
+---
+
 ### <a name="d-helpers"></a> Helpers
 
 #### Description
 
 A helper class tends used internally to provide some work that has no business domain meaning. For example, `ArrayHelper` might provide array utilities.
+
+---
 
 ### <a name="d-model"></a> Model
 
@@ -120,11 +138,15 @@ A helper class tends used internally to provide some work that has no business d
 
 Any subclasses of `DataObject`
 
+---
+
 ### <a name="d-reports"></a> Reports
 
 #### Description
 
 Any subclasses of `Report`
+
+---
 
 ### <a name="d-services"></a> Services
 
@@ -134,7 +156,9 @@ A Service class provides a way of a client to interact with some functionality i
 	
 #### Alternatives
 
-	* `Service/` - Used in several core modules, plural recommended.
+* `Service/` - Used in several core modules, plural recommended.
+
+---
 
 ### <a name="d-tasks"></a> Tasks
 
@@ -144,11 +168,15 @@ Any subclasses of `BuildTask` which are runnable by the developers.
 
 #### Alternatives
 
-	* `Task/` - Plural recommended.
+* `Task/` - Plural recommended.
+
+---
 
 ## <a name="contributing"></a>Contributing
 
-Please feel free to raise any Pull Requests to clarify or request more information. Tweet me at @wilr.
+Please feel free to raise any Pull Requests to clarify or request more information. Tweet me at [@wilr](https://www.twitter.com/wilr).
+
+---
 
 ## <a name="references"></a> References
 
