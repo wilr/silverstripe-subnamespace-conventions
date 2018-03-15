@@ -1,6 +1,6 @@
 # SilverStripe Sub-namespace Naming Conventions
 
-An opinionated set of guidelines for sub-namspace naming conventions in SilverStripe projects and modules. This is not intended to capture every possible situation, but provide a guideline for most common situations.
+An opinionated document of guidelines for sub-namspace conventions for SilverStripe projects and modules. This is not intended to capture every possible situation, but provide a guideline for most common situations.
 
 ## Table of Contents
 
