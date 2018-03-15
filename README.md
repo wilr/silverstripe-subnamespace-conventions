@@ -58,8 +58,8 @@ SilverStripe introduced first-class support for namespaces in the 4.0 release [1
 Some examples of namespaced classes in SilverStripe 4:
 	
 ```php
-namespace SilverStripe\Core\Config\Config;
-namespace SilverStripe\Forms\TextField;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Forms\TextField;
 ```
 
 At the current moment, there does not exist any conventions for organising sub-namespaces. Neither SilverStripe nor PHP-FIG define any standard sub-namespace folders or recommendations. This allows developers to make their own judgement for sub-namespaces. Over time, developers have settled into their own patterns of naming schemes including myself. 
