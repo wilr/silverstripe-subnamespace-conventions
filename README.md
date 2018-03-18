@@ -77,6 +77,7 @@ package
 │	├── [Exceptions/](#d-exceptions)
 │	├── [Extensions/](#d-extensions)
 │	├── [Helpers/](#d-helpers)
+│	├── [Interfaces/](#d-interfaces)
 │	├── [Jobs/](#d-jobs)
 │	├── [Model/](#d-model)
 │	├── [Reports/](#d-reports)
@@ -130,7 +131,7 @@ use ExampleOrg\ExampleProject\Forms\BetterTextField;
 
 ---
 
-### <a name="d-exceptions"></a> ::white_check_mark: Exceptions
+### <a name="d-exceptions"></a> :white_check_mark: Exceptions
 
 #### Description
 
@@ -155,6 +156,14 @@ Several Core Developers prefer putting `DataExtension` subclasses into `Model` s
 #### Description
 
 A helper class tends used internally to provide some work that has no business domain meaning. For example, `ArrayHelper` might provide array utilities.
+
+---
+
+### <a name="d-interfaces"></a> :white_check_mark: Interfaces
+
+#### Description
+
+If required, group any interfaces in here rather than the `Model` folder.
 
 ---
 
